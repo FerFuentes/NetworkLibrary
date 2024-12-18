@@ -16,7 +16,7 @@ public enum RequestError: Error, Equatable {
     case unknown
     case internetConnection(String)
 
-    var customMessage: String {
+    public var customMessage: String {
         switch self {
         case .decode:
             return "Decode error"
